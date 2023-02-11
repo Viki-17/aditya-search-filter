@@ -1,0 +1,35 @@
+.foot-container {
+  width: 100%;
+  /* height: 145px; */
+  margin-top: 50px;
+  padding: 50px;
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+  user-select: none;
+}
+.foot-container img {
+  height: 30px;
+}
+
+.foot-menu {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+  cursor: pointer;
+}
+
+.foot-span {
+  color: white;
+}
+
+@media (max-width: 950px) {
+  .foot-menu {
+    display: none;
+  }
+}

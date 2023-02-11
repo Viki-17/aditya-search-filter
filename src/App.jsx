@@ -1,23 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import { CustomSearch } from "./components/CustomSearch";
-import DisplayLink from "./components/DisplayLink";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [link, setLink] = useState("");
-
-  const handleChange = (newChange) => {
-    console.log(newChange);
-
-    setLink(newChange.at(0));
-  };
   return (
     <>
-      <div className="cards">
-        {/* <CustomSearch onChangeCity={handleChange} /> */}
+      <Navbar />
+      <div className="customsearch">
         <CustomSearch />
       </div>
-      {link && <DisplayLink link={link} />}
+      <Footer />
     </>
   );
 }

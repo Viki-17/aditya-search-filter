@@ -1,3 +1,4 @@
+import "./DisplayLink.css";
 const DisplayLink = ({ link }) => {
   return (
     <>
@@ -13,8 +14,6 @@ const DisplayLink = ({ link }) => {
               </a>
             </div>
           </div>
-
-          {/* <h2>{link?.branch}</h2> */}
         </div>
       </section>
     </>
